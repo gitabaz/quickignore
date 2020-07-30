@@ -1,2 +1,3 @@
-[ ] Parse all commandline arguments before doing anything. This way we can exit if we see incompatible CLA and proceed identically if we get valid CLA in any order.
-[ ] Check if an appropriate filename is provided.
+- Add a `-d` flag so a user can provide a directory and we can generate a .gitignore based on the extensions of the files inside that directory.
+- Improve flag handling
+    - Parse all commandline arguments before doing anything. This way we can exit if we see incompatible CLA and proceed identically if we get valid CLA in any order.
