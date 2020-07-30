@@ -10,7 +10,6 @@ struct options {
     const char* const name;
     const char* const summary;
     enum arg_type has_arg;
-    char* flag;
     char short_name;
 };
 

@@ -18,10 +18,10 @@ int main(int argc, char** argv) {
         char default_output_filename[] = ".gitignore";
         struct options ops_list[NUM_OPTIONS] =
         {
-            {"help", "This help text", no_argument, 0, 'h'},
-            {"list", "List languages with available templates", required_argument, 0, 'l'},
-            {"template", "Generate .gitignore template for specified languages", required_argument, 0, 't'},
-            {"output-file", "Specify output file (default .gitignore)", required_argument, default_output_filename, 'o'}
+            {"help", "This help text", no_argument, 'h'},
+            {"list", "List languages with available templates", required_argument, 'l'},
+            {"template", "Generate .gitignore template for specified languages", required_argument, 't'},
+            {"output-file", "Specify output file (default .gitignore)", required_argument, 'o'}
         };
 
         int c = 0;
@@ -81,7 +81,7 @@ int main(int argc, char** argv) {
 
                 case '?':
                         printf("quickignore: illegal option %s\n"
-                                "quickignore: try 'quickignore --help' for more information",
+                                "quickignore: try 'quickignore --help' for more information\n",
                                 argv[current_arg]);
 
                         exit(EXIT_FAILURE);
