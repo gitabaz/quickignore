@@ -15,7 +15,7 @@ int main(int argc, char** argv) {
     if (argc < 2) {
         puts("quickignore: try 'quickignore --help' for more information");
     } else {
-        char default_output_filename[] = "testgitignore";
+        char default_output_filename[] = ".gitignore";
         struct options ops_list[NUM_OPTIONS] =
         {
             {"help", "This help text", no_argument, 0, 'h'},
