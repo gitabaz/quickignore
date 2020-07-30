@@ -1,6 +1,8 @@
 #ifndef LANG_LIST_H
 #define LANG_LIST_H
+
 #define NUM_LANGS 509
+
 char* lang_list[]={
     "1c-bitrix",
     "1c",
