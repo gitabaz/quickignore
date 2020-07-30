@@ -10,7 +10,7 @@ SRC := $(wildcard $(SRC_DIR)/*.c)
 
 OBJ := $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRC))
 
-CFLAGS := -Wall -std=c17 -MMD -MP
+CFLAGS := -O2 -Wall -std=c17 -MMD -MP
 
 LDLIBS :=
 
